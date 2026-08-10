@@ -313,3 +313,77 @@ img {
         width: 94%;
     }
 }
+/* 📱 Mobile + 💻 Laptop Responsive */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 📱 الموبايل */
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .container,
+    .hero,
+    .section {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+
+/* 💻 اللاب */
+@media (min-width: 769px) {
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+}
