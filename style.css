@@ -86,54 +86,49 @@ header {
     padding: 80px 20px;
 }
 
-.hero-content {
-    max-width: 850px;
-    width: 100%;
-}
-
-.hero-small {
-    color: #d4af37;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
-}
-
-.hero h1 {
-    font-size: 70px;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-.hero h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    max-width: 750px;
-    margin: 0 auto 30px;
-}
-
-.hero-buttons {
+.hero {
+    min-height: 680px;
+    position: relative;
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.hero-scroll {
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 5px;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 80px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
+        url("trivia-mall.jpg");
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
+@media (max-width: 600px) {
+    .hero {
+        min-height: 650px;
+        padding: 70px 15px;
+
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+}
 /* =========================
    BUTTONS
 ========================= */
